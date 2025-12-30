@@ -1,0 +1,92 @@
+/* style.css */
+:root {
+    --gold: #D4AF37;
+    --dark-gold: #AA8A2E;
+    --black: #0B0B0B;
+    --light-black: #1A1A1A;
+    --white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+/* Header & Footer */
+header {
+    background: var(--light-black);
+    border-bottom: 2px solid var(--gold);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover { color: var(--gold); }
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/hero-bg.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 { font-size: 3.5rem; color: var(--gold); margin-bottom: 10px; }
+
+/* Cards & Sections */
+.container { padding: 50px 10%; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: var(--light-black);
+    border: 1px solid var(--gold);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover { transform: translateY(-10px); background: #222; }
+
+.btn {
+    background: var(--gold);
+    color: var(--black);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.btn:hover { background: var(--dark-gold); }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--light-black);
+    border-top: 2px solid var(--gold);
+    margin-top: 50px;
+}
