@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cruize Holidays | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="hero">
+        <h1>Your Luxury Escape Awaits</h1>
+        <p>Premium Tour Packages and Comfortable Travel Solutions</p>
+        <a href="contact-us.html" class="btn">Enquire Now</a>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align:center; color: var(--gold);">Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="assets/tours-thumb.jpg" alt="Tours" style="width:100%; border-radius:5px;">
+                <h3>Tour Packages</h3>
+                <p>Curated Student, Family, and Couple packages designed for memories.</p>
+                <a href="tours.html" class="btn">View Packages</a>
+            </div>
+            <div class="card">
+                <img src="assets/travel-thumb.jpg" alt="Travels" style="width:100%; border-radius:5px;">
+                <h3>Travel Services</h3>
+                <p>Premium 24-seater travelers and seamless bus/train bookings.</p>
+                <a href="travel.html" class="btn">Explore Fleet</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('header.html').then(res => res.text()).then(data => document.getElementById('header-placeholder').innerHTML = data);
+        fetch('footer.html').then(res => res.text()).then(data => document.getElementById('footer-placeholder').innerHTML = data);
+    </script>
+</body>
+</html>
