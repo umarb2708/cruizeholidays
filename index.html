@@ -2,42 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cruize Holidays | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruize Holidays | Luxury Travel</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <div id="header-placeholder"></div>
 
     <section class="hero">
-        <h1>Your Luxury Escape Awaits</h1>
-        <p>Premium Tour Packages and Comfortable Travel Solutions</p>
-        <a href="contact-us.html" class="btn">Enquire Now</a>
+        <h1>Experience the World in Luxury</h1>
+        <p>Premium tours and comfortable travel solutions tailored just for you.</p>
+        <a href="#services" class="btn">Explore Services</a>
     </section>
 
-    <div class="container">
-        <h2 style="text-align:center; color: var(--gold);">Our Services</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="assets/tours-thumb.jpg" alt="Tours" style="width:100%; border-radius:5px;">
+    <section class="container" style="text-align: center;">
+        <h2 style="color: var(--primary-gold);">Welcome to Cruize Holidays</h2>
+        <p style="max-width: 700px; margin: 20px auto;">
+            We are dedicated to providing unforgettable experiences. Whether you are a student looking for adventure, a couple seeking romance, or a family wanting to bond, we have the perfect plan for you.
+        </p>
+    </section>
+
+    <section id="services" class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="card-grid">
+            <a href="tours.html" class="card">
+                <div style="height: 200px; background-color: #333; display: flex; align-items: center; justify-content: center; color: #555;">[Image: Tour Packages]</div>
                 <h3>Tour Packages</h3>
-                <p>Curated Student, Family, and Couple packages designed for memories.</p>
-                <a href="tours.html" class="btn">View Packages</a>
-            </div>
-            <div class="card">
-                <img src="assets/travel-thumb.jpg" alt="Travels" style="width:100%; border-radius:5px;">
+                <p>Curated holiday packages for Students, Families, and Couples.</p>
+            </a>
+            
+            <a href="travels.html" class="card">
+                <div style="height: 200px; background-color: #333; display: flex; align-items: center; justify-content: center; color: #555;">[Image: Luxury Bus]</div>
                 <h3>Travel Services</h3>
-                <p>Premium 24-seater travelers and seamless bus/train bookings.</p>
-                <a href="travel.html" class="btn">Explore Fleet</a>
-            </div>
+                <p>24-Seat Traveller rentals, Bus & Train bookings.</p>
+            </a>
         </div>
-    </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="contact-us.html" class="btn">Enquire Now</a>
+        </div>
+    </section>
 
     <div id="footer-placeholder"></div>
-
-    <script>
-        fetch('header.html').then(res => res.text()).then(data => document.getElementById('header-placeholder').innerHTML = data);
-        fetch('footer.html').then(res => res.text()).then(data => document.getElementById('footer-placeholder').innerHTML = data);
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
